@@ -1,25 +1,11 @@
-//console.log(1);
-//console.log(2)
 
+ myAdres = 11214;
 
+myNationale= "бурят"
 
-//let boolExample= 1000<500;
-//console.log(boolExample)
-//let boolExample2= false;
+const MYLIVE= `Меня зовут Борис, сейчас я нахожусь в США мне ${2023-1986}лет.
+думаю стать хорошим разработчиком к ${2023+1} году.
+я живу по адресу Брклин ${myAdres} авеню.
+моя национальность ${myNationale}`;
 
-//let nullExample = null;
-//let undefinedExample = undefined;
-//console.log(undefinedExample)
-//console.log(typeof nullExample)
-//console.log(1+1);
-//console.log(2**2);
-//console.log("boris"+" "+"samurai" )
-
-//let counter=1;
-//counter+=2; 
-//counter-=2;
-//console.log(counter);
-
-
-const MYHISTORYLIVE = `Борис, раньше был врачем, после переезда осваиваю новую g. ${2023-1986}`;
-console.log(MYHISTORYLIVE);
+console.log(MYLIVE);
