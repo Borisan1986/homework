@@ -15,9 +15,11 @@
 //console.log(2**2);
 //console.log("boris"+" "+"samurai" )
 
-let counter=1;
-counter+=2; 
-counter-=2;
-console.log(counter) ;
+//let counter=1;
+//counter+=2; 
+//counter-=2;
+//console.log(counter);
 
 
+const MYHISTORYLIVE = `Борис, раньше был врачем, после переезда осваиваю. ${2023-1986}`;
+console.log(MYHISTORYLIVE);
