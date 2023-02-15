@@ -21,5 +21,5 @@
 //console.log(counter);
 
 
-const MYHISTORYLIVE = `Борис,раньше был врачем, после переезда осваиваю новую профессию. ${2023-1986}`;
+const MYHISTORYLIVE = `Борис,раньше был врачем, после переезда осваиваю новую. ${2023-1986}`;
 console.log(MYHISTORYLIVE);
