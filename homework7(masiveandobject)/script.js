@@ -1,12 +1,7 @@
-let pozy = { ingridients:'ground meat','onion', 'dough','eggs'
+let pozy = { ingridients:['ground meat','onion', 'dough','eggs',]
 };
-
-
-
-
-
-
-
+pozy.pop();
+alert(pozy[1]);
 
 
 
