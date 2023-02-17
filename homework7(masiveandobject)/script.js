@@ -14,11 +14,14 @@ alert(pozy.ingridients);
 pozy.ingridients.splice(1,1);
 alert(pozy.ingridients);
 
-let Prise = { 
-          meat:5,
-        onion:1,
-        dough:2,
-        eggs:2,
-    totalPrise: 10
+let Price = { 
+        "meat":5,
+        "onion":1,
+        "dough":2,
+        "eggs":2,
+    
 }
-        alert(Prise.totalPrise);
+let totalPrice=
+Price.meat + Price.onion + Price.dough + Price.eggs;
+        alert(totalPrice);
+        
