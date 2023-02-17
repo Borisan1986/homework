@@ -4,7 +4,7 @@ if (quiz < '4') {
   alert('мало');
  } 
  else if (quiz>4)          {
-    alert('меньше');
+    alert('много');
   } else{
     alert('верно');
   }
