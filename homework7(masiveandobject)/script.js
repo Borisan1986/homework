@@ -24,4 +24,6 @@ let Price = {
 let totalPrice=
 Price.meat + Price.onion + Price.dough + Price.eggs;
         alert(totalPrice);
-        
+
+        pozy.ingridients.splice(1,2);
+        alert(pozy.ingridients);
