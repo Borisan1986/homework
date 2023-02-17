@@ -11,3 +11,5 @@ alert(pozy.ingridients);
 pozy.ingridients.unshift(`eggs`);
 
 alert(pozy.ingridients);
+pozy.ingridients.splice(1,1);
+alert(pozy.ingridients);
