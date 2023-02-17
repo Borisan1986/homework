@@ -1,13 +1,13 @@
-let pozy = { ingridients:['ground meat','onion', 'dough','eggs',]
+let pozy =
+           { ingridients:[`ground meat`,`onion`, `dough`,`eggs`,]
 };
-//alert(pozy.ingridients);
+alert(pozy.ingridients);
 
 pozy.ingridients.pop();
 
 alert(pozy.ingridients);
 
-alert(pozy.ingridients[0]);
 
-pozy.ingridients.inshift('eggs');
+pozy.ingridients.unshift(`eggs`);
 
-alert(pozy.ingridients[0]);
+alert(pozy.ingridients);
