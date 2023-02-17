@@ -1,5 +1,5 @@
 let pozy =
-           { ingridients:[`ground meat`,`onion`, `dough`,`eggs`,]
+           { ingridients:[ `meat`,`onion`, `dough`,`eggs`,]
 };
 alert(pozy.ingridients);
 
@@ -15,7 +15,7 @@ pozy.ingridients.splice(1,1);
 alert(pozy.ingridients);
 
 let Prise = { 
-    ground meat:5,
+          meat:5,
         onion:1,
         dough:2,
         eggs:2,
