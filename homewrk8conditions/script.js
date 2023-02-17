@@ -6,7 +6,7 @@ if (quiz < '4') {
  else if (quiz>4)          {
     alert('меньше');
   } else{
-    alert(верно);
+    alert('верно');
   }
   
   
