@@ -1,51 +1,32 @@
+let dish = [
+        {
+            buuza1: 'buuza1', 
+            price: 80, 
+            expense: 30, 
+            ingridients: ['meat', 'onion', 'dough', 'eggs',],
+            },
+    
+        { 
+            pies: 'pies', 
+            price: 50, 
+            expense: 15, 
+            ingridients: ['onion', 'eggs', 'rise','dough','meat'],},
+    
+        { 
+            salad: 'salad', 
+            price: 40, 
+            expense: 10, 
+            ingridients: ['onion', 'cucumber', 'tomato', 'oliveoli', ],},
+   
+
+        {   wafles: 'wafles',
+            price : 50,  
+            expense:20,         
+            ingridients:  [  'eggs', 'dough','sugar', ] , },
 
 
-let pozy1 = {
-        meat: '5',
-             onion:'2',
-             dough: '1',
-        eggs: "3"
-  }
-  alert(pozy1.meat);
-  alert(pozy1.onion);
-  alert(pozy1.dough);
-  alert(pozy1.eggs);
 
-  
-let pies = {
-        onion:'2',
-             eggs: "3",
-               rice: '1',
-             dough: '1',
-        meat: '5',
-}
-
-alert(pies.onion);
-alert(pies.eggs);
-alert(pies.rice);
-alert(pies.dough);
-alert(pies.meat);
-
-
-let salad = {
-        onion:'2',
-           cucumber:'2',
-            tomato:'2',
-             oliveoil:'1', 
-}
-alert(salad.onion);
-alert(salad.cucumber);
-alert(salad.tomato);
-alert(salad.oliveoil);
-
-let waffles = {
-        eggs:'2',
-            dough:'2',
-             sugar:'3',
-}
-alert(waffles.eggs);
-alert(waffles.dough);
-alert(waffles.sugar);
+        ];
 
 let mydish = {dish:['pozy', 'pies','salad','waffles']};
 
