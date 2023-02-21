@@ -43,6 +43,23 @@ mydish.dish.splice(1,1);
 alert(mydish.dish);
 
 
+sum = dish[0].price - dish[0].expense;
+console.log(sum);
+
+sum = dish[1].price - dish[1].expense;
+console.log(sum);
+
+sum = dish[2].price - dish[2].expense;
+console.log(sum);
+
+sum = dish[3].price - dish[3].expense;
+console.log(sum);
+
+
+
+
+
+
 
 let pozy =
            { ingridients:[ `meat`,`onion`, `dough`,`eggs`]
