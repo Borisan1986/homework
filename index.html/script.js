@@ -28,7 +28,7 @@ let dish = [
 
         ];
 
-let mydish = {dish:['pozy', 'pies','salad','waffles']};
+let mydish = {dish:[  'buuza1', 'pies','salad','waffles']};
 
 alert(mydish.dish);
 mydish.dish.pop();
@@ -44,49 +44,17 @@ alert(mydish.dish);
 
 
 sum = dish[0].price - dish[0].expense;
-console.log(sum);
+alert(sum);
 
 sum = dish[1].price - dish[1].expense;
-console.log(sum);
+alert(sum);
 
 sum = dish[2].price - dish[2].expense;
-console.log(sum);
+alert(sum);
 
 sum = dish[3].price - dish[3].expense;
-console.log(sum);
+alert(sum);
 
 
-
-
-
-
-
-let pozy =
-           { ingridients:[ `meat`,`onion`, `dough`,`eggs`]
-};
-alert(pozy.ingridients);
-
-pozy.ingridients.pop();
-
-alert(pozy.ingridients);
-
-
-pozy.ingridients.unshift(`eggs`);
-
-alert(pozy.ingridients);
-pozy.ingridients.splice(1,1);
-alert(pozy.ingridients);
-
-let Price = { 
-        "meat":5,
-        "onion":1,
-        "dough":2,
-        "eggs":2,
-    
-}
-let totalPrice=
-Price.meat + Price.onion + Price.dough + Price.eggs;
-        alert(totalPrice);
-
-        pozy.ingridients.splice(1,2);
-        alert(pozy.ingridients);
+mydish.dish.splice(1,2,);
+        alert(mydish.dish);
