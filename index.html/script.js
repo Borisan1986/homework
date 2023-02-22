@@ -22,26 +22,31 @@ let dish = [
         {   wafles: 'wafles',
             price : 50,  
             expense:20,         
-            ingridients:  [  'eggs', 'dough','sugar', ] , },
+            ingridients:  [  'eggs', 'dough','sugar', ] , }
 
 
 
         ];
 
-let mydish = {dish:[  'buuza1', 'pies','salad','waffles']};
-
-alert(mydish.dish);
-mydish.dish.pop();
-
-alert(mydish.dish);
+//let mydish = {dish:[  'buuza1', 'pies','salad','waffles']};
 
 
-mydish.dish.unshift(`waffles`);
 
-alert(mydish.dish);
-mydish.dish.splice(1,1);
-alert(mydish.dish);
+let copy = dish[0];
+console.log(dish);
 
+dish.shift();
+dish.unshift(copy);
+console.log(copy);
+console.log(typeof copy);
+console.log(copy.ingridients);
+copy.ingridients.splice(3);
+console.log(copy.ingridients);
+
+
+
+
+let sum;
 
 sum = dish[0].price - dish[0].expense;
 alert(sum);
@@ -56,5 +61,5 @@ sum = dish[3].price - dish[3].expense;
 alert(sum);
 
 
-mydish.dish.splice(1,2,);
-        alert(mydish.dish);
+dish.splice(1,2,);
+        alert(dish);
