@@ -18,9 +18,31 @@ while( i > 0 ) {
 	i++;
 }
 
+let dish = [
+    {
+        buuza1: 'buuza1', 
+        price: 80, 
+        expense: 30, 
+        ingridients: ['meat', 'onion', 'dough', 'eggs',],
+        },
+
+    { 
+        pies: 'pies', 
+        price: 50, 
+        expense: 15, 
+        ingridients: ['onion', 'eggs', 'rise','dough','meat'],},
+
+    { 
+        salad: 'salad', 
+        price: 40, 
+        expense: 10, 
+        ingridients: ['onion', 'cucumber', 'tomato', 'oliveoli', ],},
 
 
+    {   wafles: 'wafles',
+        price : 50,  
+        expense:20,         
+        ingridients:  [  'eggs', 'dough','sugar', ] , }
+    ]
 
 
-
-    
