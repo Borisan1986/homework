@@ -13,3 +13,5 @@ function min(a, b) {
   }
   let result = min(5,3);
   alert(result);
+  let result1 = min(10,15);
+  alert(result);
