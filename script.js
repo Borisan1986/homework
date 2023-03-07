@@ -91,7 +91,7 @@ console.log(`Созданный массив из объектов блюд cо 
 
 //Посчитайте с помощью цикла профит для каждого блюда и запишите его в объект блюда. 
 for (let i = 0; i < dish.length; i++) {
-    dish[i].profit = dish[i].expense - dish[i].price;
+    dish[i].profit = dish[i].price - dish[i].expense;
 };
 
 console.log(`Созданный массив из объектов блюд с профитом: ${JSON.stringify(dish)}`);
