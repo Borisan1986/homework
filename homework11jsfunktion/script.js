@@ -61,6 +61,15 @@ cucumber: 5,
 tomato: 8,
 oliveoli: 3,
 sugar: 6,       };
+
+//Посчитайте стоимость приготовления динамически (с помощью цикла)
+for (let i = 0; i < dish.length; i++) {
+  let sum = 0;
+  for (let j = 0; j <dish[i].ingredients.length; j++) {
+      sum += ingredientsDish[dish[i].ingredients[j]];
+  }
+  dish[i].price = sum;
+};
   
   //Напишите функцию, которая будет считать профит от продажи блюда из прошлого задания. 
   //В эту функцию должны передаваться все данные для расчета профита,
@@ -69,10 +78,8 @@ sugar: 6,       };
   // а она должна посчитать профит)
   
 
-  function get(a, b){
-    return Math.abs(a - b);
+  function profit(price, expense){
+    return price - expense;
   }
   
-  console.info(get(10, 20));   // 10
-  console.info(get(-5, 3));    // 8
-  console.info(get(-13, -15)); // 2
+  alert(result);
