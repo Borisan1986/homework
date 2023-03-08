@@ -12,7 +12,7 @@ function min(a, b) {
   let result1 = min(10,15);
   alert(result1);
 
-  function profit(price, expense){
+  function dishProfit(price, expense){
     return price - expense;
   }
  
@@ -82,5 +82,9 @@ for (let i = 0; i < dish.length; i++) {
 
 
   
-  let result2 = (profit.price, profit.expense);
-  alert(result2);
+  let result2 = ''
+   
+  for ( let i = 0; i < dish.length; i++ ) {
+    dish[i].profit = dishProfit(dish[i].price,dish[i]. expense);
+    result2 +=`Блюдо: ${dish[i].name} ; Прибыль от продажи:${dish[i].profit}\n`;
+  };
