@@ -17,7 +17,7 @@ function min(a, b) {
   let buuza = 
     {
         name: 'позы', 
-        price: 80, 
+        price: 0, 
         expense: 30, 
         ingredients: ['meat', 'onion', 'dough', 'eggs'],
         };
@@ -25,7 +25,7 @@ function min(a, b) {
    let  pies = 
    { 
         name: 'пирожки', 
-        price: 30, 
+        price: 0, 
         expense: 15, 
         ingredients: ['onion', 'eggs', 'rise','dough','meat'],
     };
@@ -33,14 +33,14 @@ function min(a, b) {
    let salad = 
         { 
         name: 'салат', 
-        price: 25, 
+        price: 0, 
         expense: 10, 
         ingredients: ['onion', 'cucumber', 'tomato', 'oliveoli' ],
     };
 
 let wafles = 
     {   name: 'вафли',
-        price : 40,  
+        price : 0,  
         expense:20,         
         ingredients:  [  'eggs', 'dough','sugar', ]  
     } ;
