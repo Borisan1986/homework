@@ -82,5 +82,5 @@ for (let i = 0; i < dish.length; i++) {
     return price - expense;
   }
   
-  let result2 = profit(price, expense);
-  alert(result);
+  let result2 = (profit.price, profit.expense);
+  alert(result2);
