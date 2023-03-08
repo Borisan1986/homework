@@ -88,3 +88,5 @@ for (let i = 0; i < dish.length; i++) {
     dish[i].profit = dishProfit(dish[i].price,dish[i]. expense);
     result2 +=`Блюдо: ${dish[i].name} ; Прибыль от продажи:${dish[i].profit}\n`;
   };
+
+  alert(result2);
