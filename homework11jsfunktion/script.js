@@ -12,7 +12,9 @@ function min(a, b) {
   let result1 = min(10,15);
   alert(result1);
 
-
+  function profit(price, expense){
+    return price - expense;
+  }
  
   let buuza = 
     {
@@ -78,9 +80,7 @@ for (let i = 0; i < dish.length; i++) {
   // а она должна посчитать профит)
   
 
-  function profit(price, expense){
-    return price - expense;
-  }
+
   
   let result2 = (profit.price, profit.expense);
   alert(result2);
