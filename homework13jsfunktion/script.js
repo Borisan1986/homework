@@ -75,6 +75,14 @@ for (let i = 0; i < dish.length; i++) {
   dish[i].price = sum;
   };
   
- 
+  let result2 = ''
+  //Посчитайте с помощью цикла профит для каждого блюда и запишите его в объект блюда. 
+  for (let i = 0; i < dish.length; i++) {
+      // тут мы применим функцию расчета профита
+      dish[i].profit = countProfit(dish[i].expense, dish[i].price);
+      result2 += `Блюдо: ${dish[i].name} ; Прибыль от продажи: ${dish[i].profit}\n`;
+  };
+  
+  alert(result2);
   
   
