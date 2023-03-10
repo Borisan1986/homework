@@ -13,8 +13,8 @@ function min(a, b) {
   alert(result1);
 
 // создали функция для посчета профита от продажи блюда
-function countProfit(expense, price) {
-  return expense - price;
+function countProfit(price, expense) {
+  return price - expense;
 }
  
   let buuza = 
@@ -79,7 +79,7 @@ for (let i = 0; i < dish.length; i++) {
   //Посчитайте с помощью цикла профит для каждого блюда и запишите его в объект блюда. 
   for (let i = 0; i < dish.length; i++) {
       // тут мы применим функцию расчета профита
-      dish[i].profit = countProfit(dish[i].expense, dish[i].price);
+      dish[i].profit = countProfit(dish[i].price, dish[i].expense);
       result2 += `Блюдо: ${dish[i].name} ; Прибыль от продажи: ${dish[i].profit}\n`;
   };
   
