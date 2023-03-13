@@ -1,3 +1,8 @@
+function minValue(a, b) {
+    result = (a < b) ? a : b;
+    return result;
+}
+
 while (true) {
     let checkValues1 = parseInt(prompt('Введите первое число: '));
     let checkValues2 = parseInt(prompt('Введите второе число: '));
