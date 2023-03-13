@@ -22,22 +22,7 @@ while (true) {
 
 
 
-function min(a, b) {
-    if (a < b) {
-      return a;
-    } else {
-      return b;
-    }
-  }
-  let result = min(5,3);
-  alert(result);
-  let result1 = min(10,15);
-  alert(result1);
 
-// создали функция для посчета профита от продажи блюда
-function countProfit(price, expense) {
-  return price - expense;
-}
  
   let buuza = 
     {
