@@ -19,10 +19,10 @@ while (true) {
 
 
 
-
-
-
-
+// создали функция для посчета профита от продажи блюда
+function countProfit(price, expense) {
+  return price - expense;
+}
  
   let buuza = 
     {
