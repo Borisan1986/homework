@@ -13,7 +13,7 @@ if (userName === 'admin') {
 
   let pass = prompt('Пароль?', '');
 
-  if (pass === 'root') {
+  if (pass === '123') {
     alert( 'Вы вошли' );
   } else if (pass === '' || pass === null) {
     alert( 'Отменено' );
