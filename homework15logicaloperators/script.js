@@ -7,20 +7,24 @@
 
 
 
-function minValue(a, b) {
-    result = (a < b) ? a : b;
-    return result;
-}
+let userName = prompt("Кто там?", '');
 
-while (true) {
-    let checkValues1 = parseInt(prompt('Ваше имя: '));
-    let checkValues2 = parseInt(prompt('Введите пароль: '));
-    if (checkValues1 === checkValues2) {
-        alert('Вы ввели одинаковые значения, повторите ввод!');
-    } else {
-        alert(`Меньшее из двух значений:  ${minValue(checkValues1, checkValues2)}`);
-        break;
-    };
+if (userName === 'admin') {
+
+  let pass = prompt('Пароль?', '');
+
+  if (pass === 'root') {
+    alert( 'Вы вошли' );
+  } else if (pass === '' || pass === null) {
+    alert( 'Отменено' );
+  } else {
+    alert( 'Неверный пароль' );
+  }
+
+} else if (userName === '' || userName === null) {
+  alert( 'Отменено' );
+} else {
+  alert( "Такого пользователя не существует" );
 }
 //⭐Для хранения пользователей и паролей используйте объект, где ключом будет имя, а значением пароль.
 let users = { 
