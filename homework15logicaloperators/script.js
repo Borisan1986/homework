@@ -7,7 +7,7 @@
 
 
 
-let userName = prompt("Кто там?", '');
+let userName = prompt("Ваше имя?", '');
 
 if (userName === 'admin') {
 
