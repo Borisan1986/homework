@@ -8,9 +8,10 @@
 
 function checkLoginPass(_login, _pass) {
     correctValues = {
-        'roman': '2711',
+        'boris': '1986',
         'admin': 'root',
-        'user': '1234'
+        'user': '1234',
+        'bato': '1510'
     };
 
     if (!(_login in correctValues)) {
@@ -24,14 +25,14 @@ function checkLoginPass(_login, _pass) {
     };
 }
 
-while (true) {
-    let login = prompt('Введите имя пользователя: ', 'user');
-    let password = prompt('Введите пароль: ');
-    let result = checkLoginPass(login, password);
-    if (result == 'Такого пользователя не существует' || result == 'Неправильный пароль' || result == 'Ошибка в обработке данных') {
-        alert(`Результат работы кода: ${result}\nПовторите ввод!`);
-    } else {
-        alert(`Результат работы кода: ${result}\nДобро пожаловать!`);
-        break;
-    };
-}
+// while (true) {
+//     let login = prompt('Введите имя пользователя: ', 'user');
+//     let password = prompt('Введите пароль: ');
+//     let result = checkLoginPass(login, password);
+//     if (result == 'Такого пользователя не существует' || result == 'Неправильный пароль' || result == 'Ошибка в обработке данных') {
+//         alert(`Результат работы кода: ${result}\nПовторите ввод!`);
+//     } else {
+//         alert(`Результат работы кода: ${result}\nДобро пожаловать!`);
+//         break;
+//     };
+// }
