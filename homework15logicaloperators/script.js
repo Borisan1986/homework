@@ -1,22 +1,23 @@
 
-function checkLoginPass(_login, _pass) {
-    correctValues = {
-        'boris': '1986',
-        'admin': 'root',
-        'user': '1234',
-        'bato': '1510'
-    };
+// function checkLoginPass(_login, _pass) {
+//     correctValues = {
+//         'boris': '1986',
+//         'admin': 'root',
+//         'user': '1234',
+//         'bato': '1510'
+//     };
 
-    if (!(_login in correctValues)) {
-        return 'Такого пользователя не существует';
-    } else if (correctValues[_login] != _pass) {
-        return 'Неправильный пароль';
-    } else if (_login in correctValues && correctValues[_login] == _pass) {
-        return 'Вы вошли';
-    } else {
-        return 'Ошибка в обработке данных';
-    };
-}
+//     if (!(_login in correctValues)) {
+//         return 'Такого пользователя не существует';
+//     } else if (correctValues[_login] != _pass) {
+//         return 'Неправильный пароль';
+//     } else if (_login in correctValues && correctValues[_login] == _pass) {
+//         return 'Вы вошли';
+//     } else {
+//         return 'Ошибка в обработке данных';
+//     };
+// }
+
 
 // while (true) {
 //     let login = prompt('Введите имя пользователя: ', 'user');
@@ -28,7 +29,7 @@ function checkLoginPass(_login, _pass) {
 //         alert(`Результат работы кода: ${result}\nДобро пожаловать!`);
 //         break;
 //     };
-//г
+//}
 //Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
 //Далее спросите пароль. 
 //Для указанных ниже пар имя - пароль проверьте правильность пароля. 
