@@ -4,36 +4,34 @@
 //При правильном пароле выведите “Вы вошли”, при неправильном пароле выведите “Неправильный пароль”. 
 //Если ввели имя не из списка - выведите “Такого пользователя не существует”. Используйте `if`, следите за читаемостью кода. 
 //Пары логин и пароль: admin - root, user - 123
+//⭐Для хранения пользователей и паролей используйте объект, где ключом будет имя, а значением пароль.
 
+function checkLoginPass(_login, _pass) {
+    correctValues = {
+        'roman': '2711',
+        'admin': 'root',
+        'user': '1234'
+    };
 
-
-let userName = prompt("Ваше имя?", '');
-
-if (userName === 'admin') {
-
-  let pass = prompt('Пароль?', '');
-
-  if (pass === '123') {
-    alert( 'Вы вошли' );
-  } else if (pass === '' || pass === null) {
-    alert( 'Отменено' );
-  } else {
-    alert( 'Неверный пароль' );
-  }
-
-} else if (userName === '' || userName === null) {
-  alert( 'Отменено' );
-} else {
-  alert( "Такого пользователя не существует" );
+    if (!(_login in correctValues)) {
+        return 'Такого пользователя не существует';
+    } else if (correctValues[_login] != _pass) {
+        return 'Неправильный пароль';
+    } else if (_login in correctValues && correctValues[_login] == _pass) {
+        return 'Вы вошли';
+    } else {
+        return 'Ошибка в обработке данных';
+    };
 }
 
-
-
-
-
-//⭐Для хранения пользователей и паролей используйте объект, где ключом будет имя, а значением пароль.
-let users = { 
-    admin: root,
-    user: 123,
-           };
-    
+while (true) {
+    let login = prompt('Введите имя пользователя: ', 'user');
+    let password = prompt('Введите пароль: ');
+    let result = checkLoginPass(login, password);
+    if (result == 'Такого пользователя не существует' || result == 'Неправильный пароль' || result == 'Ошибка в обработке данных') {
+        alert(`Результат работы кода: ${result}\nПовторите ввод!`);
+    } else {
+        alert(`Результат работы кода: ${result}\nДобро пожаловать!`);
+        break;
+    };
+}
