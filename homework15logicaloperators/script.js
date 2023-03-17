@@ -20,6 +20,7 @@ alert ('Вы вошли!');     // &&-и , ||- или , !-не
 else if (login !== 'boris' && login !== 'admin' && login !== 'user') {
     alert ('оператор не найден!');
 }
+
 else if (pass !== loginPass.boris||pass !== loginPass.admin||pass!== loginPass.user){
     alert('пароль не верный!');
 };
