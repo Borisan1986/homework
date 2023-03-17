@@ -39,23 +39,36 @@
 //⭐Для хранения пользователей и паролей используйте объект, где ключом будет имя, а значением пароль.
 // let question = prompt('Ваше имя?', user);
 
-// alert(`Тебе ${age} лет!`); // Тебе 100 лет!
-let userName = prompt("Имя пользователя?", '');
+// let userName = prompt("Имя пользователя?", '');
 
-if (userName === 'Админ') {
+// if (userName === 'Админ') {
 
-  let pass = prompt('Пароль?', '');
+//   let pass = prompt('Пароль?', '');
 
-  if (pass === '123') {
-    alert( 'Здравствуйте!' );
-  } else if (pass === '' || pass === null) {
-    alert( 'Отменено' );
-  } else {
-    alert( 'Неверный пароль' );
-  }
+//   if (pass === '123') {
+//     alert( 'Здравствуйте!' );
+//   } else if (pass === '' || pass === null) {
+//     alert( 'Отменено' );
+//   } else {
+//     alert( 'Неверный пароль' );
+//   }
 
-} else if (userName === '' || userName === null) {
-  alert( 'Отменено' );
-} else {
-  alert( "Я вас не знаю" );
+// } else if (userName === '' || userName === null) {
+//   alert( 'Отменено' );
+// } else {
+//   alert( "Я вас не знаю" );
+// }
+correctValues = {
+            'boris': '1986',
+            'admin': 'root',
+            'user': '1234',
+            'bato': '1510'
+        };
+
+    
+let question = prompt('Ваше имя?');
+let pass = promt ('ваш пароль?');
+if (login == 'admin' && pass == loginPass.admin|| login == 'user' && pass == loginPass.user) {
+alert ('Вы вошли!');     // &&-и , ||- или , !-не
 }
+else 
