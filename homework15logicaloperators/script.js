@@ -46,7 +46,7 @@ if (userName === 'Админ') {
 
   let pass = prompt('Пароль?', '');
 
-  if (pass === 'Я главный') {
+  if (pass === '123') {
     alert( 'Здравствуйте!' );
   } else if (pass === '' || pass === null) {
     alert( 'Отменено' );
