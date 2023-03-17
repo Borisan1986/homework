@@ -62,13 +62,18 @@ correctValues = {
             'boris': '1986',
             'admin': 'root',
             'user': '1234',
-            'bato': '1510'
+          
         };
 
     
 let question = prompt('Ваше имя?');
 let pass = promt ('ваш пароль?');
-if (login == 'admin' && pass == loginPass.admin|| login == 'user' && pass == loginPass.user) {
+if (login == 'boris' && pass == loginPass.boris||login == 'admin' && pass == loginPass.admin|| login == 'user' && pass == loginPass.user) {
 alert ('Вы вошли!');     // &&-и , ||- или , !-не
 }
-else 
+else if (login !== 'boris'||login !== 'admin'|| login !== 'user') {
+    alert ('оператор не найден!');
+}
+else if (pass !== loginPass.boris||pass !== loginPass.admin||pass!== loginPass.user){
+    alert('пароль не верный!');
+};
