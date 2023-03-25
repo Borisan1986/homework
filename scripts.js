@@ -7,7 +7,7 @@
 loginPass = {
     'boris': '1986',
     'admin': 'root',
-    user: '1234',
+    'user': '1234',
   
 };
 let res =[];
