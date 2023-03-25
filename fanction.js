@@ -7,4 +7,4 @@
     result = (a < b) ? a : b;
     return result;
   }
-  export default minValue;
+  export minValue;
