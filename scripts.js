@@ -4,10 +4,7 @@ import  minValue from './homework/fanction.js';
 
 
 
-function minValue(a, b) {
-    result = (a < b) ? a : b;
-    return result;
-  }
+
   
   while (true) {
     let checkValues1 = parseInt(prompt('Введите первое число: '));
