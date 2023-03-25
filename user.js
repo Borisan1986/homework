@@ -1,4 +1,12 @@
-
 //user.js
-export let name = "Ваня";
-export let age = 32;
+let name = "Ваня";
+
+function changeName(newName) {
+  name = newName;
+}
+
+function hello(userName) {
+  alert(`Приветствую, ${userName}`);
+}
+
+export { name, hello, changeName };
