@@ -7,9 +7,16 @@
 loginPass = {
     'boris': '1986',
     'admin': 'root',
-    'user': '1234',
+    user: '1234',
   
 };
+let res =[];
+for (let i = 0; i < loginPass.length; i++) {
+    res.push(loginPass[i]['user'])
+}
+
+
+
 
 export let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
 export let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
