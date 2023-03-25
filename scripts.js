@@ -1,5 +1,9 @@
 //Напишите функцию принимающую два числа и возвращающую меньшее из них.
 
+import  minValue from './homework/fanction.js';
+
+
+
 function minValue(a, b) {
     result = (a < b) ? a : b;
     return result;
