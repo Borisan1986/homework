@@ -1,3 +1,9 @@
+
+
+
+
+
+
 loginPass = {
     'boris': '1986',
     'admin': 'root',
@@ -5,8 +11,8 @@ loginPass = {
   
 };
 
-let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
-let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
+export let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
+export let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
 
 if (login == 'boris' && pass == loginPass.boris||login == 'admin' && pass == loginPass.admin|| login == 'user' && pass == loginPass.user) {
 alert ('Вы вошли!');     // &&-и , ||- или , !-не
