@@ -1,4 +1,4 @@
 
 //user.js
 export let name = "Ваня";
-let age = 32;
+export let age = 32;
