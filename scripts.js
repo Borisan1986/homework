@@ -4,19 +4,22 @@
 
 
 
-loginPass = [{
-    'boris': '1986',
+loginPass = [
+    {'boris': '1986',
     'admin': 'root',
-    'user': '1234',
+    user: '1234',
   
 }
 ];
+
+function getValue(array,key){
 let res =[];
 for (let i = 0; i < loginPass.length; i++) {
     res.push(loginPass[i]['user'])
 }
-export let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
-export let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
+}
+ let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
+ let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
 
 
 if (login == 'boris' && pass == loginPass.boris||login == 'admin' && pass == loginPass.admin|| login == 'user' && pass == loginPass.user) {
