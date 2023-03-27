@@ -9,8 +9,8 @@ loginPass = [{
     'admin': 'root',
     'user': '1234',
   
-};
-]
+}
+];
 let res =[];
 for (let i = 0; i < loginPass.length; i++) {
     res.push(loginPass[i]['user'])
