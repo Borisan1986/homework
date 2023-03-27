@@ -5,20 +5,25 @@
 
 
 loginPass = [
-    {'boris': '1986',
-    'admin': 'root',
+    {boris: '1986',
+    admin: 'root',
     user: '1234',
   
 }
 ];
+console.log(getValue(loginPass,'user'));
 
 function getValue(array,key){
 let res =[];
-for (let i = 0; i < loginPass.length; i++) {
-    res.push(loginPass[i]['user'])
+for (let i = 0; i <array.length; i++) {
+    res.push(array[i][key])
 }
+return res;
 }
- let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
+ 
+
+
+\let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
  let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
 
 
