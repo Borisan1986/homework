@@ -39,8 +39,8 @@ alert ('оператор не найден!');
 else if (pass !== loginPass.boris||pass !== loginPass.admin||pass!== loginPass.user){
 alert('пароль не верный!');
 };
-import getValue from './modules/get_value.js';
-import mapArray from './modules/map.js';
-import {getValue, mapArray} from './modules/helpers_array.js';
+// import getValue from './modules/get_value.js';
+// import mapArray from './modules/map.js';
+// import {getValue, mapArray} from './modules/helpers_array.js';
 
 
