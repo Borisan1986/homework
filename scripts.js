@@ -2,10 +2,10 @@
 import { getValue, mapArray,p } from './module.js';
 
 
-const superHero = [
-    { id: 12345, hero: 'batman', power: 'money' },
-    { id: 54321, hero: 'aquaman', power: 'fishpower' },
-];
+// const superHero = [
+//     { id: 12345, hero: 'batman', power: 'money' },
+//     { id: 54321, hero: 'aquaman', power: 'fishpower' },
+// ];
 
 
 
@@ -20,8 +20,8 @@ const superHero = [
 ];
 
 console.log(getValue(loginPass, 'boris'));
-console.log(getValue(superHero, 'id'));
-console.log(mapArray(superHero, 'hero'));
+console.log(getValue(loginPass, 'admin'));
+console.log(mapArray(loginPass, 'user'));
 console.log(p);
 
 
