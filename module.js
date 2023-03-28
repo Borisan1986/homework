@@ -27,7 +27,7 @@
 //  let login = prompt('Ваше имя?');//Спросите пользователя его имя с помощью `prompt(’вопрос’, ‘значение по умолчанию’)`. 
 //  let pass = prompt ('ваш пароль?');//Далее спросите пароль. 
 
-function checLogin(login, pass, loginPass){
+export function checLogin(login, pass, loginPass){
 
 if (login == 'boris' && pass == loginPass.boris||login == 'admin' && pass == loginPass.admin|| login == 'user' && pass == loginPass.user) {
 alert ('Вы вошли!');     // &&-и , ||- или , !-не
