@@ -19,3 +19,6 @@ const helpers = {
 export const getValue = helpers.getValue2;
 export const mapArray = helpers.mapArray;
 export const p = helpers.p;
+
+//Не совсем понял зачем ты создал обьект, который потом не используется. Экспортируешь ты все равно его свойства,
+ //а не обьект целиком.
