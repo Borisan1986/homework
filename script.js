@@ -66,7 +66,7 @@ let ingredientsDish = {
   //4 задание.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
  
 let vegetarianDishOnly = dish.every(function(item, index, arr) {
-  return item.length  != "eggs","meat";
+  return item  != "eggs","meat";
 });
 
 console.log(vegetarianDishOnly); // folse
