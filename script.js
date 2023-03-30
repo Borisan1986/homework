@@ -63,6 +63,19 @@ let ingredientsDish = {
   
   console.log(vegetarianDish); // true
 
+  //4 задание.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
+ 
+let vegetarianDishOnly = dish.every(function(item, index, arr) {
+  return item.length  != "eggs","meat";
+});
+
+console.log(vegetarianDishOnly); // folse
+
+
+
+
+
+
 // //Посчитайте стоимость приготовления динамически (с помощью цикла)
 // for (let i = 0; i < dish.length; i++) {
 //     let sum = 0;
