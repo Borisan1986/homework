@@ -1,11 +1,11 @@
 
-let buuza = 
+let buuza = [
 {
     name: 'позы', 
     price: 0, 
     expense: 30, 
     ingredients: ['meat', 'onion', 'dough', 'eggs'],
-    };
+    },
 
 let  pies = 
 { 
@@ -13,7 +13,7 @@ let  pies =
     price: 0, 
     expense: 15, 
     ingredients: ['onion', 'eggs', 'rise','dough','meat'],
-};
+},
 
 let salad = 
     { 
@@ -21,14 +21,15 @@ let salad =
     price: 0, 
     expense: 10, 
     ingredients: ['onion', 'cucumber', 'tomato', 'oliveoli' ],
-};
+},
 
 let wafles = 
 {   name: 'вафли',
     price : 0,  
     expense:20,         
     ingredients:  [  'eggs', 'dough','sugar', ]  
-} ;
+},
+ ];
 
 // массив из блюд
 
