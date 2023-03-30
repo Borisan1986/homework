@@ -1,4 +1,4 @@
-import { vegetarianDish } from './function.js';
+// import { vegetarianDish } from './function.js';
    let buuza = 
     {
         name: 'позы', 
@@ -56,7 +56,11 @@ let ingredientsDish = {
  oliveoli: 3,
  sugar: 6,       };
 
-
+ let vegetarianDish = dish.some(function(item, index, arr) {
+    return item != "eggs","meat";
+  });
+  
+  console.log(vegetarianDish); // true
 // //Посчитайте стоимость приготовления динамически (с помощью цикла)
 // for (let i = 0; i < dish.length; i++) {
 //     let sum = 0;
