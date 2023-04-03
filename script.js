@@ -68,23 +68,6 @@ dish.forEach(function (item, index, arr) {
     console.log(`Блюдо: ${item.name} ; Себестоимость: ${item.price}`);
 });
 
-
-
-// //3 задание .Определите, есть ли в меню хоть одно вегетарианское блюдо, используя `some`.
-//  let vegetarianDish = dish.some(function(item, index, arr) {
-//     return item != "eggs","meat";
-//   });
-
-//   console.log(vegetarianDish); // true
-
-//   //4 задание.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
-
-// let vegetarianDishOnly = dish.every(function(item, index, arr) {
-//   return item  == "eggs","meat";
-// });
-
-// console.log(vegetarianDishOnly); // folse
-
 // 2 задание.map для создания массива с объектами
 
 
@@ -99,6 +82,20 @@ let updatedMeals = dish.map(function (item, index, arr) {
 
 console.log(updatedMeals)
 
+//3 задание .Определите, есть ли в меню хоть одно вегетарианское блюдо, используя `some`.
+
+let veganDish = dish.some(function (item, index, arr) {
+
+    return item == salad;
+});
 
 
+console.log(`Есть ли вегетарианское блюдо ${veganDish}`)
 
+//4 задание.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
+
+let vegetarianDishOnly = dish.every(function (item, index, arr) {
+    return item == salad;
+});
+
+console.log(`полностью ли у вас вегетарианское меню ${vegetarianDishOnly}`); // folse
