@@ -50,20 +50,20 @@ let ingredientsDish = {
 //которая использует `reduce` 
 
 
-for (let i = 0; i < dish.length; i++) {
-    let sum = 0;
+// for (let i = 0; i < dish.length; i++) {
+//     let sum = 0;
 
- let sumMenuLength = dish.reduce(function(sum, item, index, arr) {
-      sum += ingredientsDish[dish[i].ingredients[j]];
-      dish[i].price = sum;
-      console.log(sum)         // 0       5       10       13
-	console.log(item)        // pizza   pasta   sup      buuza
-	console.log(item.length) // 5       5       3        5
-  return sum + item.length;// 5       10      13       18
- }, 0)
-};
+//  let sumMenuLength = dish.reduce(function(sum, item, index, arr) {
+//     return sum += ingredientsDish[dish[i].ingredients[j]];
+//       dish[i].price = sum;
+//       console.log(sum)        
+// 	console.log(item)        
+// 	console.log(item.length) 
+//   return sum + item.length;
+//  }, 0)
+// };
  
- console.log(sumMenuLength); // 18
+//  console.log(sumMenuLength);
 
 
 
@@ -82,7 +82,16 @@ for (let i = 0; i < dish.length; i++) {
 
 // console.log(vegetarianDishOnly); // folse
 
+// 2 задание.map для создания массива с объектами
+let updatedMeals = meals.map(function (item, index, arr) {
+    let elem = {
+        name: item.name,
+        expense: item.expense
+    }
+    return elem;
+});
 
+console.log(updatedMeals)
 
 
 
