@@ -4,6 +4,7 @@ let buuza =
     price: 0,
     expense: 30,
     ingredients: ['meat', 'onion', 'dough', 'eggs'],
+    greenPees: 'noVegan',
 };
 let pies =
 {
@@ -11,6 +12,7 @@ let pies =
     price: 0,
     expense: 15,
     ingredients: ['onion', 'eggs', 'rise', 'dough', 'meat'],
+    greenPees: 'noVegan',
 };
 let salad =
 {
@@ -18,13 +20,15 @@ let salad =
     price: 0,
     expense: 10,
     ingredients: ['onion', 'cucumber', 'tomato', 'oliveoli'],
+    greenPees: 'vegan',
 };
 let wafles =
 {
     name: 'вафли',
     price: 0,
     expense: 20,
-    ingredients: ['eggs', 'dough', 'sugar',]
+    ingredients: ['eggs', 'dough', 'sugar'],
+    greenPees: 'noVegan',
 };
 // массив из блюд
 
@@ -90,7 +94,7 @@ let veganDish = dish.some(function (item, index, arr) {
 });
 
 
-console.log(`Есть ли вегетарианское блюдо ${veganDish}`)
+console.log(`Есть ли вегетарианское блюдо ${veganDish}`)  // true
 
 //4 задание.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
 
@@ -99,3 +103,18 @@ let vegetarianDishOnly = dish.every(function (item, index, arr) {
 });
 
 console.log(`полностью ли у вас вегетарианское меню ${vegetarianDishOnly}`); // folse
+
+
+//Создайте массив с вегетарианскими блюдами с помощью filter.
+
+
+let massivDish = dish.filter(function (item) {
+	return item.greenPees == 'vegan';
+});
+console.log(`массив с вегетарианскими блюдами ${JSON.stringify(massivDish)}`);
+
+
+
+
+
+
