@@ -67,7 +67,7 @@ dish.forEach(function (item, index, arr) {
     }, 0)
 });
 
-// вывод
+
 dish.forEach(function (item, index, arr) {
     console.log(`Блюдо: ${item.name} ; Себестоимость: ${item.price}`);
 });
