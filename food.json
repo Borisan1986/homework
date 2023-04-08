@@ -1,0 +1,36 @@
+
+{
+    "name": "позы",
+    "price": 0,
+    "expense": 30,
+    "ingredients": ["meat", "onion", "dough", "eggs"],
+    "greenPees": "noVegan"
+}
+
+{
+    "name": "пирожки",
+    "price": 0,
+    "expense": 15,
+    "ingredients": ["onion", "eggs", "rise", "dough", "meat"],
+    "greenPees": "noVegan",
+}
+
+{
+    "name": "салат",
+    "price": 0,
+    "expense": 10,
+    "ingredients": ["onion", "cucumber", "tomato", "oliveoli"],
+    "greenPees": "vegan",
+}
+
+{
+    "name": "вафли",
+    "price": 0,
+    "expense": 20,
+    "ingredients": ["eggs", "dough", "sugar"],
+    "greenPees": "noVegan",
+}
+
+
+
+  ["buuza", "pies", "salad", "wafles"];
