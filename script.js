@@ -1,36 +1,47 @@
 let menu;
 
-let ingredients;
+let ingredientsD;
 
-fetch("./food.json")
+fetch("./ingredientsDish.json")
 .then((r) => r.json())
 .then((r) => {
-menu = r;
-return fetch("./ingredients.json");
+    ingredientsD = r;
+return fetch("./food.json");
 })
 .then((r) => r.json())
 .then((r) => {
-    ingredients = r;
+    menu = r;
 
-		//reduce
-		menu.forEach(function (item) {
-			item.expense = item.ingridients.reduce(function (accum, item) {
-				return accum += expenseIngr[item];
-			}, 0);
-		});
+    menu.forEach(function (item, index, arr) {
 
-		dish.forEach(function (item) {
-			console.log(`блюдо: ${item.name} - себестоимость: ${item.expense}\n
-			ПРОФИТ ${item.price - item.expense}`);
+        item.expense = item.ingredients.reduce(function (accum, item,) {
+            return accum += menu[item];
+    
+        }, 0)
+    });
+    
+    
+    menu.forEach(function (item, index, arr) {
+        console.log(`Блюдо: ${item.name} ; Себестоимость: ${item.price}\n
+        ПРОФИТ ${item.price - item.expense}`);
+
+ });
+
+
+
+   
+   
+   	//map
+		let changeDish =menu .map(function (item) {
+			let change = {
+				onlyname: item.name,
+				onlyprice: item.price
+			}
+			return change;
 		});
-	})
-	// .catch((error) => console.log(error));
+		console.log(`${JSON.stringify(changeDish)}`);
    
-   
-   
-   
-   
-   
+    });
    
    
    
