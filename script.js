@@ -12,36 +12,23 @@ fetch("./ingredientsDish.json")
     .then((r) => r.json())
     .then((r) => {
         menu = r;           //позы, пирожки, салат.
-                   //reduce
-     menu.forEach(function (item, index, arr) {
 
-let sumMenuLength = item.ingredients.reduce(function (sum, item, index, arr) {
- return sum += ingredientsD[item.nameIngrediets];
+        console.log (menu);
+
+        //reduce
+        menu.forEach(function (item, index, arr) {
+
+            let sumMenuLength = item.ingredients.reduce(function (sum, item, index, arr) {
+                return sum += ingredientsD[item.nameIngrediets];
+        
+            }, 0)
+           // menu[item].sumMenuLength = sumMenuLength;
+        });
+            menu.forEach(function (item) {
                 
- }, 0)
- 
- });
-                
-                
- menu.forEach(function (item, index, arr) {
-  console.log(`Блюдо: ${item.name} ; Себестоимость: ${item.price}`);
-                });
-                
-     
+console.log(`Блюдо: ${item.name} ; Себестоимость: ${   sumMenuLength}`);
+            });
+
+
 
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

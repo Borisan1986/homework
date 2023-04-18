@@ -1,8 +1,8 @@
 [
 {
     "name": "позы",
-    "price": 30,
-    "expense": 0,
+    "price": 0,
+    "expense": 30,
     "ingredients": ["meat", "onion", "dough", "eggs"]
     
 
@@ -10,24 +10,24 @@
 
 {
     "name": "пирожки",
-    "price": 15,
-    "expense": 0,
+    "price": 0,
+    "expense": 15,
     "ingredients": ["onion", "eggs", "rise", "dough", "meat"]
     
 },
 
 {
     "name": "салат",
-    "price": 10,
-    "expense": 0,
+    "price": 0,
+    "expense": 10,
     "ingredients": ["onion", "cucumber", "tomato", "oliveoli"]
    
 },
 
 {
     "name": "вафли",
-    "price": 20,
-    "expense": 0,
+    "price": 0,
+    "expense": 20,
     "ingredients": ["eggs", "dough", "sugar"]
    
 }
