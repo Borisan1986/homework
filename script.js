@@ -6,17 +6,17 @@ fetch("./ingredientsDish.json")
     .then((r) => r.json())
     .then((r) => {
         ingredientsD = r;   //ингредиенты 
-
+        console.log(ingredientsD);
         return fetch("./food.json");
     })
     .then((r) => r.json())
     .then((r) => {
         menu = r;           //позы, пирожки, салат.
- 
+        console.log(menu);
 menu.forEach(function (item, index, arr) {
     console.log(menu);
     item.price = item.ingredients.reduce(function (sum, item, index, arr) {
-        return sum += ingredientsD[item.nameIngrediets];
+        return sum += ingredientsD[item].price;
 
     }, 0)
 });
