@@ -62,7 +62,7 @@ console.log(`Созданный массив из объектов блюд cо 
 dish.forEach(function (item, index, arr) {
 
     let sumMenuLength = item.ingredients.reduce(function (sum, item, index, arr) {
-        return sum += ingredientsD[item].price;
+        return sum += ingredientsPrises[item.nameIngrediets];
 
     }, 0)
 });
