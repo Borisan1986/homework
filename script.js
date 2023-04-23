@@ -16,7 +16,7 @@ fetch("./ingredientsDish.json")
 menu.forEach(function (item, index, arr) {
     console.log(menu);
     item.price = item.ingredients.reduce(function (sum, item, index, arr) {
-        return sum += ingredientsD[item];
+        return sum += ingredientsD[item.price];
 
     }, 0)
     console.log(item);
