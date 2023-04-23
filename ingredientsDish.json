@@ -1,39 +1,39 @@
 {
     "meat": {
         "vegan": false,
-        "price": "40"
+        "price": 40
     },
     "onion": {
         "vegan": true,
-        "price": "15"
+        "price": 15
     },
-    "drougt": {
+    "dough": {
         "vegan": true,
-        "price": "10"
+        "price": 10
     },
     "eggs": {
         "vegan": false,
-        "price": "10"
+        "price": 10
     },
     "rise": {
         "vegan": true,
-        "price": "12"
+        "price": 12
     },
     "cucumber": {
         "vegan": true,
-        "price": "5"
+        "price": 5
     },
     "tomato": {
         "vegan": true,
-        "price": "8"
+        "price": 8
     },
     "oliveoli": {
         "vegan": true,
-        "price": "3"
+        "price": 3
     },
     "sugar": {
         "vegan": true,
-        "price": "6"
+        "price": 6
     }
 }
 
