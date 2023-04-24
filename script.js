@@ -67,8 +67,13 @@ console.log(`полностью ли у вас вегетарианское ме
 //Создайте массив с вегетарианскими блюдами с помощью filter.
 
 
-let massivDish = menu.filter(function (item) {
-	return item.greenPees == 'vegan';
+let massivDish = menu.filter(function (item,index,arr) {
+    return item.ingredients.every(function (item, index, arr) {
+       
+        return ingredientsD[item].vegan;
+        
+    })
+  
 });
 console.log(`массив с вегетарианскими блюдами ${JSON.stringify(massivDish)}`);
 
